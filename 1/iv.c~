@@ -1,0 +1,6 @@
+#include <stdio.h>
+extern static int i;
+int main()
+{
+	printf("%d\n", i);
+}

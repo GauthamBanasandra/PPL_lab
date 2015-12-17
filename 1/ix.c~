@@ -1,0 +1,17 @@
+/*yes.
+*/
+#include <stdio.h>
+
+int* f();
+int main()
+{
+	int *i=f();
+	printf("%d\n", *i);
+	return 0;
+}
+int* f()
+{
+	static int* i;
+	printf("in f\n");
+	return i;
+}

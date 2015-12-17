@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include "v_head.h"
+int main()
+{
+	extern void function();
+	function();
+	printf("%d\n", i);
+	i++;
+	return 0;
+}

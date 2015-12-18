@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main()
+{
+	struct a
+	{
+		int x;
+		float y;
+		int a[2];
+	};
+	struct a b={2, 4.1};
+	struct a c;
+	//compare the 2 struct by comparing the attributes for equality.
+	typedef int myint;
+	int i1=0;
+	myint i2=0;
+	printf("%d %d\n", i1, i2);
+	c=b;
+	printf("b %d %f\n", b.x, b.y);
+	printf("c %d %f\n", c.x, c.y);
+	return 0;
+}

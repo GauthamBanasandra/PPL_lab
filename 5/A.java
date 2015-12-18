@@ -1,0 +1,18 @@
+import java.util.*;
+public final class A
+{
+	public static void display(List <? extends Number> list)
+	{
+		for(Object elem:list)
+			System.out.println(elem);
+	}
+	
+	public static void main(String[] args)
+	{
+		ArrayList numbers=new ArrayList();
+		
+		numbers.add(new Integer(4));
+		numbers.add(new Double(4.4));
+		display(numbers);
+	}
+}
